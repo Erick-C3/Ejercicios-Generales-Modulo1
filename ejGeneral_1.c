@@ -1,4 +1,6 @@
 /*
+	rand y srand info: http://www.chuidiang.org/clinux/funciones/rand.php
+
 	
 	Simular un piedra papel o tijera
 

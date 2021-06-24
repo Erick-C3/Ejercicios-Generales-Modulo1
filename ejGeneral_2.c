@@ -1,4 +1,6 @@
 /*	
+	rand y srand info: http://www.chuidiang.org/clinux/funciones/rand.php
+
 	
 	Simular un juego de azar donde hay un numero ganador y el usuario podra intentar ganar
 	un premio
@@ -21,7 +23,7 @@
 		-El programa debe poder generar un numero aleatorio para simular la suerte
 		-Si el usuario gana o sale se debe informar la situacion como corresponda
 	
-	rand y srand info: http://www.chuidiang.org/clinux/funciones/rand.php
+	
 
 	EXTRA 1: Agregar opcion de aumentar saldo
 	EXTRA 2: agregar oferta donde comprando 5 fichas se  realiza un descuento del 15%
