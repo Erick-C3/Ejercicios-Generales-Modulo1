@@ -1,6 +1,6 @@
 /*
 	rand y srand info: http://www.chuidiang.org/clinux/funciones/rand.php
-
+					   https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
 	
 	Simular un piedra papel o tijera
 

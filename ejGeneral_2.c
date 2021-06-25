@@ -1,6 +1,6 @@
 /*	
 	rand y srand info: http://www.chuidiang.org/clinux/funciones/rand.php
-
+					   https://www.geeksforgeeks.org/rand-and-srand-in-ccpp/
 	
 	Simular un juego de azar donde hay un numero ganador y el usuario podra intentar ganar
 	un premio
