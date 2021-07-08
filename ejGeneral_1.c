@@ -17,3 +17,75 @@
 	
 	EXTRA 1: implementar al mejor de 3 
 */
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <stdbool.h>
+
+#define PIEDRA  0
+#define PAPEL  1
+#define TIJERA  2
+
+const int MAX_RANGO = 2;
+
+const bool HAY_EMPATE = true;
+const bool NO_EMPATE = false;
+
+const bool GANO_USUARIO = true;
+const bool NO_GANO_USUARIO = false;
+
+
+int main(){
+	srand (time(NULL));
+
+	int opcUsuario = 0;
+	int opcBot = 0;
+
+	bool empateEstado = NO_EMPATE;
+
+	do{
+		printf("Piedra - 0\nPapel - 1\nTijera - 2\n");
+		scanf("%i", &opcUsuario);
+	
+		printf("\nUsaste ");
+		switch(opcUsuario){
+			case PIEDRA:
+				printf("Piedra\n");
+				break;
+			case PAPEL:
+				printf("papel\n");
+				break;
+			case TIJERA:
+				printf("Tijera\n");
+		}
+
+		opcBot = rand() % MAX_RANGO + 1;
+	
+		printf("El bot uso ");
+		switch(opcBot){
+			case PIEDRA:
+				printf("Piedra\n");
+				break;
+			case PAPEL:
+				printf("papel\n");
+				break;
+			case TIJERA:
+				printf("Tijera\n");
+		}
+	
+		if(opcUsuario != opcBot){
+			printf("\nResultado: Gano el");
+			if(((opcUsuario == PIEDRA) && (opcBot == TIJERA)) || ((opcUsuario == PAPEL) && (opcBot == PIEDRA)) || ((opcUsuario == TIJERA) && (opcBot == PAPEL)) ){
+				printf(" usuario\n");
+			}else{
+				printf(" bot\n");
+			}
+			empateEstado = NO_EMPATE;
+		}else{
+			printf("\n\n\tHAY UN EMPATE!\nComienza otra ronda!\n");
+			empateEstado = HAY_EMPATE;
+		}
+	}while(empateEstado == HAY_EMPATE);
+
+	return 0;
+}
